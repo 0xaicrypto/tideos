@@ -29,7 +29,7 @@
 ## 2. 源码仓库与分支策略
 
 ```sh
-git clone https://github.com/0xaicrypto/freebsd-src.git ~/tideos-src
+git clone https://github.com/0xaicrypto/tideos.git ~/tideos-src
 cd ~/tideos-src
 git remote add upstream https://git.freebsd.org/freebsd-src.git
 git fetch upstream stable/15
