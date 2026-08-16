@@ -14,7 +14,7 @@
 | 里程碑 | 状态 | 说明 |
 |---|---|---|
 | M1 环境搭建 | ✅ 完成 | 本地 KVM 构建机（FreeBSD 15.1-RELEASE，12 vCPU / 24GB / 128GB ZFS）；`tideos/15` 分支零定制构建通过：buildworld + buildkernel + installworld/installkernel；重启后运行自建系统（`15.1-STABLE tideos/15-n284866`） |
-| M2 最小定制 ISO | ⏳ 待开始 | 品牌 + rc.conf + loader logo |
+| M2 最小定制 ISO | 🔨 进行中 | 品牌 v1.0 定稿（极简潮线/深海蓝/月光白）；`TIDEOS` 内核配置编译通过；loader 开机画面 + 登录欢迎语已打入 bsdinstall；release ISO 构建中 |
 | M3 桌面集成 | ⏳ 待开始 | Xorg/Wayland + Plasma/Xfce + 显卡 + WiFi + 音频 |
 | M4 poudriere 仓库 + 安装器 | ⏳ 待开始 | BSDINSTALL_PKGS + postinstall 定制 |
 | M5 发布流水线 + pkgbase | ⏳ 待开始 | 自动化发布 + base 更新机制 |
