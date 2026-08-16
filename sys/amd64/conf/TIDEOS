@@ -1,0 +1,8 @@
+#
+# TideOS kernel configuration file
+# Derived from GENERIC - retains full FreeBSD GENERIC driver set for now.
+# Deep customization (nooptions/nodevice) will be added in later milestones.
+#
+include GENERIC
+
+ident		TIDEOS

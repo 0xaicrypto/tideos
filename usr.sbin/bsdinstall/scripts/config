@@ -45,6 +45,20 @@ cat $BSDINSTALL_TMPBOOT/loader.conf.* >> $BSDINSTALL_TMPBOOT/loader.conf
 rm $BSDINSTALL_TMPBOOT/loader.conf.*
 df -t zfs $BSDINSTALL_CHROOT > /dev/null && echo "zfs_load=\"YES\"" >> $BSDINSTALL_TMPBOOT/loader.conf
 
+# === TideOS branding ===
+# Boot splash screen
+echo 'splash_bmp_load="YES"' >> $BSDINSTALL_TMPBOOT/loader.conf
+echo 'bitmap_load="YES"' >> $BSDINSTALL_TMPBOOT/loader.conf
+echo 'bitmap_name="/boot/splash.bmp"' >> $BSDINSTALL_TMPBOOT/loader.conf
+cp /usr/libexec/bsdinstall/splash.bmp $BSDINSTALL_CHROOT/boot/splash.bmp
+
+# Login banner template (merged with kernel version by rc.d/motd)
+cat > $BSDINSTALL_CHROOT/etc/motd.template <<'TIDEOS_MOTD'
+Welcome to TideOS!
+随潮而生，稳定可期 -- Rise with the tide.
+TIDEOS_MOTD
+# === end TideOS branding ===
+
 cp $BSDINSTALL_TMPBOOT/* $BSDINSTALL_CHROOT/boot
 
 [ "${debugFile#+}" ] && cp "${debugFile#+}" $BSDINSTALL_CHROOT/var/log/

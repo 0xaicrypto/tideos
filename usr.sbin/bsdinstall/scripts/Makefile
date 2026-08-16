@@ -31,6 +31,9 @@ SCRIPTS=auto \
 
 BINDIR= ${LIBEXECDIR}/bsdinstall
 
+FILES= splash.bmp
+FILESDIR= ${LIBEXECDIR}/bsdinstall
+
 MAN=
 
 pkgbase: pkgbase.in
