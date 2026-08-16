@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B3A54"/>
+      <stop offset="1" stop-color="#061F31"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <path d="M 64 212 C 148 212 168 154 256 154 C 344 154 364 212 448 212"
+        fill="none" stroke="#F4F7FA" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 92 276 C 164 276 184 236 256 236 C 328 236 348 276 420 276"
+        fill="none" stroke="#F4F7FA" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+  <text x="256" y="392" text-anchor="middle"
+        font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="88" font-weight="600" letter-spacing="6" fill="#F4F7FA">TideOS</text>
+  <text x="256" y="438" text-anchor="middle"
+        font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="24" font-weight="400" letter-spacing="10" fill="#7FB3CE">RISE WITH THE TIDE</text>
+</svg>
