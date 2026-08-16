@@ -7,7 +7,20 @@
 | 分支 | 来源 | 用途 |
 |---|---|---|
 | `main` | freebsd-src main（16.0-CURRENT） | 仅作文档承载（README），不用于构建 |
-| `tideos/15` | 待从 upstream `stable/15` 拉出 | 发行版定制分支，全部自定义修改收敛于此 |
+| `tideos/15` | 从 upstream `stable/15` 拉出（HEAD `9de55e815b0`） | 发行版定制分支，全部自定义修改收敛于此 |
+
+## 当前进度
+
+| 里程碑 | 状态 | 说明 |
+|---|---|---|
+| M1 环境搭建 | 🔨 进行中 | 本地 KVM 构建机：FreeBSD 15.1-RELEASE，12 vCPU / 24GB / 128GB ZFS；`/usr/src` 已克隆 `tideos/15` 分支（零定制）；首次 `make buildworld` 构建中 |
+| M2 最小定制 ISO | ⏳ 待开始 | 品牌 + rc.conf + loader logo |
+| M3 桌面集成 | ⏳ 待开始 | Xorg/Wayland + Plasma/Xfce + 显卡 + WiFi + 音频 |
+| M4 poudriere 仓库 + 安装器 | ⏳ 待开始 | BSDINSTALL_PKGS + postinstall 定制 |
+| M5 发布流水线 + pkgbase | ⏳ 待开始 | 自动化发布 + base 更新机制 |
+| M6 中文本地化 + 硬件测试 | ⏳ 待开始 | 首个公开 Alpha |
+
+构建机访问：`ssh root@127.0.0.1 -p 2222`（本机 KVM 虚拟机，密钥登录）。
 
 参考同类项目：GhostBSD（桌面、Xfce/MATE）、NomadBSD（live 桌面）、MidnightBSD（macOS 风格桌面）、helloSystem（精简桌面）、TrueNAS（深度定制但服务器方向）。建议先研究 GhostBSD 的开源仓库做法。
 
