@@ -13,7 +13,7 @@
 
 | 里程碑 | 状态 | 说明 |
 |---|---|---|
-| M1 环境搭建 | 🔨 进行中 | 本地 KVM 构建机：FreeBSD 15.1-RELEASE，12 vCPU / 24GB / 128GB ZFS；`/usr/src` 已克隆 `tideos/15` 分支（零定制）；首次 `make buildworld` 构建中 |
+| M1 环境搭建 | ✅ 完成 | 本地 KVM 构建机（FreeBSD 15.1-RELEASE，12 vCPU / 24GB / 128GB ZFS）；`tideos/15` 分支零定制构建通过：buildworld + buildkernel + installworld/installkernel；重启后运行自建系统（`15.1-STABLE tideos/15-n284866`） |
 | M2 最小定制 ISO | ⏳ 待开始 | 品牌 + rc.conf + loader logo |
 | M3 桌面集成 | ⏳ 待开始 | Xorg/Wayland + Plasma/Xfce + 显卡 + WiFi + 音频 |
 | M4 poudriere 仓库 + 安装器 | ⏳ 待开始 | BSDINSTALL_PKGS + postinstall 定制 |
