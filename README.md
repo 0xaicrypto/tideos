@@ -2,6 +2,20 @@
 
 基于 FreeBSD 源码深度定制的桌面操作系统分发版。名字 TideOS，寓意版本如潮汐般规律涨落、稳定更迭。
 
+## 产品定位
+
+**第一阶段（当前，Alpha 之前）：最优雅、最稳定的桌面 BSD。**
+先把桌面体验、更新机制、品牌做扎实，成为"开箱即用的 FreeBSD 桌面"。
+
+**第二阶段（Alpha 之后）：兼容层副标题——"潮起处，三海汇流"。**
+FreeBSD 是月亮（看不见的驱动力），托起两股潮：
+
+- **Linux 兼容层**：基于内核 Linuxulator（与 drm-kmod 显卡驱动同源），一键安装 Ubuntu 用户态；CLI/服务场景承诺稳定，GUI 标注实验性
+- **Windows 兼容层**：一键 Wine + DXVK（Vulkan 驱动由 drm-kmod 提供），面向游戏与常用应用
+- **Android 明确不做子系统**（依赖 binder/ashmem 等 Linux 内核特性，FreeBSD 上无兼容层路径），仅提供 bhyve 虚拟机模板作为高级用户工具
+
+兼容层包装为 `tideos-windows` / `tideos-linux` 一键包，等桌面主线立住后作为差异化卖点，不提前透支信任。
+
 ## 仓库说明
 
 | 分支 | 来源 | 用途 |
