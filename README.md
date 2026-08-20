@@ -69,7 +69,7 @@ FreeBSD 是月亮（看不见的驱动力），托起两股潮：
 |---|---|---|
 | M1 环境搭建 | ✅ 完成 | 本地 KVM 构建机（FreeBSD 15.1-RELEASE，12 vCPU / 24GB / 128GB ZFS）；`tideos/15` 分支零定制构建通过：buildworld + buildkernel + installworld/installkernel；重启后运行自建系统（`15.1-STABLE tideos/15-n284866`） |
 | M2 最小定制 ISO | ✅ 完成 | 品牌 v1.0 定稿；`TIDEOS` 内核配置编译通过；loader 开机画面 + 登录欢迎语 + OS 身份品牌化（uname -s = TideOS、登录横幅 TideOS/amd64、安装器 OSNAME=TideOS）已落地并在装机/重启验证；release ISO 构建成功并在独立虚拟机装机验证。注：官方镜像待以 `KERNCONF=TIDEOS` 重出 |
-| M3 桌面集成 | 🔨 核心已验证 | 桌面栈安装完成（xorg + KDE Plasma 6 + SDDM + dbus + drm-kmod）；SDDM 图形登录界面与 Plasma 桌面在 VM 中渲染验证（截图 `tideos-desktop-verified.png`）。待办：真机验证（显卡/WiFi/音频）、Wayland 会话（需真机 i915/amdgpu，drm-kmod 无 virtio-gpu 驱动）、SDDM 登录交互、pipewire 音频 |
+| M3 桌面集成 | 🔨 核心已验证 | 桌面栈安装完成（xorg + KDE Plasma 6 + SDDM + dbus + drm-kmod）；SDDM 图形登录界面与 Plasma 桌面在 VM 中渲染验证（截图 [`docs/screenshots/tideos-desktop-verified.png`](docs/screenshots/tideos-desktop-verified.png)）。待办：真机验证（显卡/WiFi/音频）、Wayland 会话（需真机 i915/amdgpu，drm-kmod 无 virtio-gpu 驱动）、SDDM 登录交互、pipewire 音频 |
 | M4 poudriere 仓库 + 安装器 | ⏳ 待开始 | BSDINSTALL_PKGS + postinstall 定制 |
 | M5 发布流水线 + pkgbase | ⏳ 待开始 | 自动化发布 + base 更新机制 |
 | M6 中文本地化 + 硬件测试 | ⏳ 待开始 | 首个公开 Alpha |
