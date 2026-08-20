@@ -38,7 +38,7 @@ if [ ! "$_COMMON_SUBR" ]; then _COMMON_SUBR=1
 #
 # Default OSNAME shown in the installer
 #
-: ${OSNAME:=FreeBSD}
+: ${OSNAME:=TideOS}
 : ${EFI_LABEL_NAME:=FreeBSD}
 
 ############################################################ GLOBALS

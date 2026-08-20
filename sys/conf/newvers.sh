@@ -49,7 +49,7 @@
 #		like the -V command
 #
 
-TYPE="FreeBSD"
+TYPE="TideOS"
 REVISION="15.1"
 BRANCH="STABLE"
 if [ -n "${BRANCH_OVERRIDE}" ]; then
