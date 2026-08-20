@@ -6,3 +6,8 @@
 include GENERIC
 
 ident		TIDEOS
+
+# VirtIO GPU: enables KMS/DRM in virtual machines (qemu/KVM virtio-vga),
+# which is required for Wayland compositors and accelerated X11 in VMs.
+device		virtio_gpu
+
