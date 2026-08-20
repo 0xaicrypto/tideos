@@ -68,7 +68,7 @@ FreeBSD 是月亮（看不见的驱动力），托起两股潮：
 | 里程碑 | 状态 | 说明 |
 |---|---|---|
 | M1 环境搭建 | ✅ 完成 | 本地 KVM 构建机（FreeBSD 15.1-RELEASE，12 vCPU / 24GB / 128GB ZFS）；`tideos/15` 分支零定制构建通过：buildworld + buildkernel + installworld/installkernel；重启后运行自建系统（`15.1-STABLE tideos/15-n284866`） |
-| M2 最小定制 ISO | 🔨 进行中 | 品牌 v1.0 定稿（极简潮线/深海蓝/月光白）；`TIDEOS` 内核配置编译通过；loader 开机画面 + 登录欢迎语已打入 bsdinstall；release ISO 构建中 |
+| M2 最小定制 ISO | ✅ 完成 | 品牌 v1.0 定稿；`TIDEOS` 内核配置编译通过；loader 开机画面（splash.bmp）+ 登录欢迎语（motd.template）随安装器落地；release ISO 构建成功并在独立虚拟机装机验证：uname 显示 tideos/15 构建、欢迎横幅正常。注：当前 ISO 内核为 GENERIC，后续以 `KERNCONF=TIDEOS` 重出官方镜像 |
 | M3 桌面集成 | ⏳ 待开始 | Xorg/Wayland + Plasma/Xfce + 显卡 + WiFi + 音频 |
 | M4 poudriere 仓库 + 安装器 | ⏳ 待开始 | BSDINSTALL_PKGS + postinstall 定制 |
 | M5 发布流水线 + pkgbase | ⏳ 待开始 | 自动化发布 + base 更新机制 |
